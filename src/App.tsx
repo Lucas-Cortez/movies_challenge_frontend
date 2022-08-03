@@ -1,11 +1,13 @@
-import { useState } from "react";
-import { Navbar } from "./templates/Navbar";
+import React from "react";
+import { Main } from "./templates/main";
+import { Navbar } from "./templates/navbar";
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
-    </div>
+      <Main />
+    </>
   );
 }
 
