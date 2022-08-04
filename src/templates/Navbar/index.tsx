@@ -1,26 +1,33 @@
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { Avatar, Box, Button, Flex, Heading, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { RepeatIcon, TriangleDownIcon, UpDownIcon } from "@chakra-ui/icons";
+import { Avatar, Box, Flex, Heading } from "@chakra-ui/react";
+import { StyledIconButton } from "../../components/StyledIconButton";
 
 function Navbar() {
-  // const { colorMode, toggleColorMode } = useColorMode();
   return (
     <>
-      <Flex h={16} align={"center"} justify={"space-between"} bg={"gray.300"} px={12} w="100%">
+      <Flex
+        h={16}
+        align={"center"}
+        justify={"space-between"}
+        bg={"gray.800"}
+        color="gray.200"
+        px={["40px", "80px"]}
+        w="100%"
+        position={"fixed"}
+        zIndex={1}
+      >
         <Box>
-          <Heading as="h4" size="lg">
-            Logo
-          </Heading>
+          <UpDownIcon color={"red.500"} w={8} h={8} />
         </Box>
         <Flex align={"center"} w={140} justify={"space-between"}>
-          {/* <Button size={"sm"} colorScheme="purple" variant="outline" onClick={toggleColorMode}>
-              {useColorModeValue(<MoonIcon />, <SunIcon />)}
-            </Button> */}
-          <Heading as={"h3"} size={"sm"}>
+          <StyledIconButton icon={<RepeatIcon />} aria-label="reloadButton" />
+          {/* <Heading as={"h3"} size={"sm"}>
             Olá Lucas
           </Heading>
-          <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+          <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" /> */}
         </Flex>
       </Flex>
+      <Box h={16} />
     </>
   );
 }

@@ -16,7 +16,12 @@ function MovieCard({ onClick, movie }: Props) {
         boxShadow="xl"
         rounded="lg"
         style={{ cursor: "pointer" }}
-        _hover={{ transform: "scale(1.05)", transition: "all 0.08s ease-in-out" }}
+        _hover={{
+          transform: "scale(1.05)",
+          transition: "all 0.08s ease-in-out",
+          borderColor: "red.500",
+          borderWidth: "2px",
+        }}
         onClick={onClick}
         bgImage={movie.image}
         bgSize={"cover"}
