@@ -20,7 +20,7 @@ function Navbar() {
           <UpDownIcon color={"red.500"} w={8} h={8} />
         </Box>
         <Flex align={"center"} w={140} justify={"space-between"}>
-          <StyledIconButton icon={<RepeatIcon />} aria-label="reloadButton" />
+          <StyledIconButton icon={<RepeatIcon />} aria-label="updateButton" />
           {/* <Heading as={"h3"} size={"sm"}>
             Olá Lucas
           </Heading>
